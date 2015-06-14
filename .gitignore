@@ -17,4 +17,4 @@ package.json
 ##########
 site/**
 node_modules/**
-
+src/css/templates/**
