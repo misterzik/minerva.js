@@ -15,6 +15,6 @@ package.json
 
 # Folders #
 ##########
-site/**
 node_modules/**
-src/css/templates/**
+css/*
+js/*
