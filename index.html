@@ -1,125 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-  <meta name="robots" content="index,follow" />
-  <!-- Title -->
-  <title></title>
-  <!-- Style -->
-  <link href="http://insanen.com/plugins/minerva.js/css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" media="only screen and (max-width: 400px)" href="http://insanen.com/plugins/minerva.js/css/mobile.css" />
-  <!-- Script -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://insanen.com/plugins/minerva.js/js/jquery.minerva.js"></script>
-  <!-- Load Tabs -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://insanen.com/plugins/minerva.js/js/jquery.minerva.tabs.js"></script>
+<html>
 
-<!--<link rel="stylesheet" media="only screen and (min-width: 401px)" href="css/style.css" />-->
-<!--<link rel="stylesheet" media="only screen and (min-width: 401px)" href="css/style-green.css" />-->
-<!--<link rel="stylesheet" media="only screen and (min-width: 401px)" href="css/style-orange.css" />-->
-<!--<link rel="stylesheet" media="only screen and (min-width: 401px)" href="css/style-blue.css" />-->
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Minerva.js : Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007">
 
-<script>
-    $(function() { $(".tabs").insanen_tabs(); });
-</script>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-<!-- Call Back Header -->
-<link href="http://insanen.com/plugins/minerva.js/css/tabs.css" rel="stylesheet" />
-<link href="http://insanen.com/plugins/minerva.js/css/style.css" rel="stylesheet" />
+    <title>Minerva.js</title>
+  </head>
 
-  <!-- Page Unique Scripts & Styles --> 
+  <body>
 
-  <style>
-    body { font-family: Arial, Helvetica, Sans-Serif; font-size: 80%; }
-    h2 { margin:0; padding:0; }
-  </style>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/misterzik/minerva.js">View on GitHub</a>
+
+          <h1 id="project_title">Minerva.js</h1>
+          <h2 id="project_tagline">Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/misterzik/minerva.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/misterzik/minerva.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007. After few years got deprecated by jQuery Functionality to make your own Sliders without external coding, But we are bringing it back just for kicks! </p>
+
+<p>Minerva.js helps you wrap your images into a carousel slider, and gives you the option to add navigation buttons through simple markups.</p>
+
+<p>Minerva.js includes elegant templates to choose from, It is simply, the easiest and faster slider for your to-go projects.</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<ol>
+<li>Download source code and copy from src to your project folder.</li>
+<li>Make the CSS &amp; JS calls for script dependencies.</li>
+</ol>
+
+<pre><code>&lt;link href="src/minerva.min.css" rel="stylesheet" /&gt;
+&lt;script src="src/minerva.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<ol>
+<li>Let's create wrapper's and container to keep our coding in place.</li>
+<li>Let's run slider wrapper around our images. </li>
+<li>Let's Populate/Add as many images as we please by using simple HTML. </li>
+<li>Let's create the dots ( . . . . . . ) wrapper effect. </li>
+<li>Depending on the images you add, You will have to add as many dots as needed.</li>
+<li>Add Controllers markup. </li>
+<li>Happy Coding </li>
+</ol>
+
+<pre><code>&lt;div class="wrapper"&gt;
+&lt;div class="container"&gt;
+  &lt;ul id="slider"&gt;
+    &lt;li&gt;&lt;img src="img/amazon.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/galapagos.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/guayaquil.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/montanita.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/portoviejo.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul id="dots"&gt;
+    &lt;li class="active"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;div class="" id="controllers"&gt;
+  &lt;button id="prev"&gt;Prev&lt;/button&gt;
+  &lt;button id="next"&gt;Next&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>In 2007, Nick Rodriguez (<a href="https://github.com/misterzik" class="user-mention">@misterzik</a>), Insanen Solutions (<a href="https://github.com/insanen" class="user-mention">@insanen</a>), and ResolveDesign founded Minerva.JS as a playground script.
+In Memory of Minerva V, Rest in peace my beautiful angel, I will never stop expressing your passion for art.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Minerva.js maintained by <a href="https://github.com/misterzik">misterzik</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
-</head>
-<!--end-->
 
-  
-
-<div class="container">
-  <ul id="slider">
-    <li><img src="http://insanen.com/plugins/minerva.js/img/Ecuador.jpg" height="100%" alt="" /></li>
-    <li><img src="http://insanen.com/plugins/minerva.js/img/Wave.jpg" height="100%" alt="" /></li>
-    <li><img src="http://insanen.com/plugins/minerva.js/img/WashingtonBridge.jpg" height="100%" alt="" /></li>
-    <li><img src="http://insanen.com/plugins/minerva.js/img/HighWay.jpg" height="100%" alt="" /></li>
-    <li><img src="http://insanen.com/plugins/minerva.js/img/NewJersey.jpg" height="100%" alt="" /></li>
-  </ul>
-
-  <ul id="dots">   
-    <li class="active"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-  <div class="" id="controllers">
-  <button id="prev">Prev</button>
-  <button id="next">Next</button>
-  </div>
-
-<div class="tabs">
-    <ul class="tab-menu">
-        <li><a href="#tab-1">Overview</a></li>
-        <li><a href="#tab-2">Installation</a></li>
-        <li><a href="#tab-3">Versions</a></li>
-        <li><a href="http://insanen.com/plugins/minerva.js/assets/pages/templates.htm" data-fragment="#small-print">Plugin Integration</a></li>
-    </ul>
-    <div class="tab-content" id="tab-1">
-        <h2>Product Overview</h2>
-        <p>
-          Minerva.js is a lightweight jQuery Library that will help you, wrap around your images, 
-          into a slideshow or sort of like carousel order.
-          <br />   
-
-    </div>
-   
- <div class="tab-content" id="tab-2">
-        <h2>Installations</h2>
-        
-        <br /><br />
-
-        <div align="left">
-        1. Lets run the Main wrapper <br />
-        2. Lets run Slider wrapper <br />
-        3. Lets Populate/Add as many images as, We Please <br />
-        4. Lets run the Dots wrapper/efx <br />
-        5. Don't forget to Add as Many Dots, As needed. <br />
-        6. Happy Coding <br />
-        </div>
-
-        <br /><br />
-         <!-- github embbed -->
-         <script src="https://gist.github.com/misterzik/296451339f577d3c2f48.js"></script>
-         <!-- ends -->
-
-  
-
-    </div>
-
-
-
-    <div class="tab-content" id="tab-3">
-        <h2>Product Version</h2>
-  
-  <div class="" align="left">
-            <p>
-
-Name: Minerva Carousel<br />
-Theme URI: http://www.insanen.com/<br />
-Author: MisterZik<br />
-Author URI: http://www.insanen.com/developer/misterzik<br />
-Version: 0.0.9<br />
-License: GNU General Public License v2 or later<br />
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-            </p>
-  </div>
-
-    </div>
-    <!-- You'll notice the delivery info is missing, because we get this via Ajax -->
-</div>
+  </body>
+</html>
