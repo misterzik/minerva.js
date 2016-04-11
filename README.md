@@ -1,6 +1,5 @@
 # Minerva.js 
 
-### Welcome to GitHub Pages.
 Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007. After few years got deprecated by jQuery Functionality to make your own Sliders without external coding, But we are bringing it back just for kicks! 
 
 
