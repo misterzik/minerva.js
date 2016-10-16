@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Minerva.js : Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Minerva.js</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Minerva.js by misterzik</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/misterzik/minerva.js">View on GitHub</a>
-
-          <h1 id="project_title">Minerva.js</h1>
-          <h2 id="project_tagline">Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/misterzik/minerva.js/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/misterzik/minerva.js/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+        <header>
+          <h1>Minerva.js</h1>
+          <h2>Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007</h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/misterzik/minerva.js/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/misterzik/minerva.js/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/misterzik/minerva.js" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<p>Minerva is super lightweight jQuery script made by Insanen Solutions back in 2007. After few years got deprecated by jQuery Functionality to make your own Sliders without external coding, But we are bringing it back just for kicks! </p>
+        <hr>
 
-<p>Minerva.js helps you wrap your images into a carousel slider, and gives you the option to add navigation buttons through simple markups.</p>
+        <section id="main_content">
+          <h1>
+<a id="welcome-to-minervajs" class="anchor" href="#welcome-to-minervajs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome To Minerva.js</h1>
 
-<p>Minerva.js includes elegant templates to choose from, It is simply, the easiest and faster slider for your to-go projects.</p>
+<p>Minerva.JS is a Simple and Elegant Carousel Slider Power by Javascript &amp; jQuery. Super light-weight script made by Insanen Solutions back in 2007.</p>
+
+<p>Minerva.js helps you wrap your images into a carousel gallery slider, and gives you the option to add navigation buttons through simple HTML markups.</p>
+
+<p>Minerva.js includes elegant skin colors to choose from, the easiest and faster slider for your to-go projects.</p>
+
+<p>Note: jQuery Required.</p>
 
 <h3>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
 <ol>
-<li>Download source code and copy from src to your project folder.</li>
-<li>Make the CSS &amp; JS calls for script dependencies.</li>
+<li>Download source code and copy folder <code>src</code> to your project root folder.</li>
+<li>Make the CSS &amp; Javascript calls to load  script dependencies.</li>
 </ol>
 
 <pre><code>&lt;link href="src/minerva.min.css" rel="stylesheet" /&gt;
@@ -56,18 +58,21 @@
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
 
 <ol>
-<li>Let's create wrapper's and container to keep our coding in place.</li>
-<li>Let's run slider wrapper around our images. </li>
-<li>Let's Populate/Add as many images as we please by using simple HTML. </li>
-<li>Let's create the dots ( . . . . . . ) wrapper effect. </li>
+<li>Let's create a wrapper's and container to keep our coding in place. (stylesheets included with source code.)</li>
+<li>Let's run slider wrapper around our images that we want to slide through.</li>
+<li>Let's Populate/Add as many images as we please by using simple HTML markups.</li>
+<li>Let's create the dots ( . . . . . . ) wrapper effect under line, and then by adding <code>li</code>.</li>
 <li>Depending on the images you add, You will have to add as many dots as needed.</li>
-<li>Add Controllers markup. </li>
-<li>Happy Coding </li>
+<li>Add Controllers markup.</li>
+<li>Happy Coding</li>
 </ol>
 
-<pre><code>&lt;div class="wrapper"&gt;
-&lt;div class="container"&gt;
-  &lt;ul id="slider"&gt;
+<h2>
+<a id="full-width" class="anchor" href="#full-width" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Full Width</h2>
+
+<pre><code>&lt;div class="wrapper-minerva"&gt;
+&lt;div class="container-minerva"&gt;
+  &lt;ul id="slider-minerva"&gt;
     &lt;li&gt;&lt;img src="img/amazon.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
     &lt;li&gt;&lt;img src="img/galapagos.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
     &lt;li&gt;&lt;img src="img/guayaquil.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
@@ -75,7 +80,7 @@
     &lt;li&gt;&lt;img src="img/portoviejo.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
-  &lt;ul id="dots"&gt;
+  &lt;ul id="dots-minerva"&gt;
     &lt;li class="active"&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
     &lt;li&gt;&lt;/li&gt;
@@ -83,32 +88,63 @@
     &lt;li&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
-  &lt;div class="" id="controllers"&gt;
-  &lt;button id="prev"&gt;Prev&lt;/button&gt;
-  &lt;button id="next"&gt;Next&lt;/button&gt;
+  &lt;div class="" id="controllers-minerva"&gt;
+  &lt;button id="prev-minerva"&gt;Prev&lt;/button&gt;
+  &lt;button id="next-minerva"&gt;Next&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
 
+<hr>
+
+<h2>
+<a id="half-width" class="anchor" href="#half-width" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Half Width</h2>
+
+<pre><code>&lt;div class="wrapper-minerva"&gt;
+&lt;div class="sm-container-minerva"&gt;
+  &lt;ul id="slider-minerva"&gt;
+    &lt;li&gt;&lt;img src="img/amazon.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/galapagos.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/guayaquil.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/montanita.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="img/portoviejo.jpg" height="100%" alt="" /&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul id="dots-minerva"&gt;
+    &lt;li class="active"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;div class="" id="controllers-minerva"&gt;
+  &lt;button id="prev-minerva"&gt;Prev&lt;/button&gt;
+  &lt;button id="next-minerva"&gt;Next&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<p>Read more documentations @ <a href="http://misterzik.github.io/minerva.js/">http://misterzik.github.io/minerva.js/</a></p>
+
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>In 2007, Nick Rodriguez (<a href="https://github.com/misterzik" class="user-mention">@misterzik</a>), Insanen Solutions (<a href="https://github.com/insanen" class="user-mention">@insanen</a>), and ResolveDesign founded Minerva.JS as a playground script.
 In Memory of Minerva V, Rest in peace my beautiful angel, I will never stop expressing your passion for art.</p>
-      </section>
+        </section>
+
+        <footer>
+          Minerva.js is maintained by <a href="https://github.com/misterzik">misterzik</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Minerva.js maintained by <a href="https://github.com/misterzik">misterzik</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
   </body>
 </html>
