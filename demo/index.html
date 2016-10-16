@@ -10,7 +10,7 @@
   <link rel="stylesheet" media="only screen and (max-width: 400px)" href="css/mobile.css" />
   <!-- Script -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="src/js/minerva.min.js"></script>
+  <script src="../src/js/minerva.min.js"></script>
 
 <style>
 body {
@@ -21,14 +21,28 @@ body {
 
 </style>
 
-<link href="style.css" rel="stylesheet" />
-<link href="src/css/skins/minerva-orange.min.css" rel="stylesheet" />
+<link href="../src/css/minerva.min.css" rel="stylesheet" />
 
 </head>
+<body>
 
-<div class="wrapper">
-<div class="container">
-  <ul id="slider">
+<div align="center">
+<h1> Minerva.JS </h1>
+
+<p>
+Simple & Elegant Carousel Slider Power by Javascript.<br />
+Minerva.js helps you wrap your images into a carousel gallery,<br />
+and gives you the option to add navigation buttons by adding simple html markups.
+</p>
+</div>
+
+<h3> Full Width </h3>
+
+<!-- Full Size Carousel -->
+<div class="wrapper-minerva">
+<div class="container-minerva">
+
+  <ul id="slider-minerva">
     <li><img src="img/amazon.jpg" height="100%" alt="" /></li>
     <li><img src="img/galapagos.jpg" height="100%" alt="" /></li>
     <li><img src="img/guayaquil.jpg" height="100%" alt="" /></li>
@@ -36,7 +50,7 @@ body {
     <li><img src="img/portoviejo.jpg" height="100%" alt="" /></li>
   </ul>
 
-  <ul id="dots">
+  <ul id="dots-minerva" class="green-minerva">
     <li class="active"></li>
     <li></li>
     <li></li>
@@ -44,20 +58,27 @@ body {
     <li></li>
   </ul>
 
-  <div class="" id="controllers">
-  <button id="prev">Prev</button>
-  <button id="next">Next</button>
+  <div class="" id="controllers-minerva">
+    <button id="prev-minerva">Prev</button>
+    <button id="next-minerva">Next</button>
   </div>
+
 </div>
 </div>
+<!-- Ends Full Size Carousel -->
+
+
+<h3> Half Width </h3>
+<small>Please replace the container division, for this one;</small>
+<code>
+  &lt;div class="sm-container-minerva"&gt;
+</code>
 
 <div align="center">
 <br />
-<a href="index.html">Default Theme</a> | <a href="blue.html">Blue Theme</a> | <a href="green.html">Green Theme</a> | <a href="orange.html">Orange Theme</a>
-
-<br /><br />
-
-&copy Copyright <a href="http://www.insanen.com" target="_blank">Insanen Solutions</a> 2004
+<small>
+  &copy Copyright 2007 - <a href="http://insanen.com" target="_blank">Insanen Solutions</a>
+</small>
 </div>
 
 </body>
