@@ -1,0 +1,38 @@
+{
+  "name": "@misterzik/minerva.js",
+  "version": "1.0.0",
+  "description": "Minerva.JS is a Simple and Elegant Carousel Slider, and Minerva JS is a super lightweight carousel component. Written under the react framework.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misterzik/minerva.js.git"
+  },
+  "keywords": [
+    "carousel",
+    "slider",
+    "react",
+    "Minerva.JS",
+    "Minerva Javascript",
+    "Javascript slider",
+    "minervajs"
+  ],
+  "author": "MisterZik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misterzik/minerva.js/issues"
+  },
+  "homepage": "https://github.com/misterzik/minerva.js#readme",
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "/"
+  ],
+  "types": "index.d.ts"
+}
