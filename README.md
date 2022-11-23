@@ -1,91 +1,82 @@
+![logo](minervajs-slider.png "Minerva.JS")
+
 # Minerva.js
 
-Minerva.JS is a Simple and Elegant Carousel Slider Power by Javascript & jQuery. Super light-weight script made by Insanen Solutions back in 2007.
+Minerva.JS is a Simple and Elegant Carousel Slider, and Minerva JS is a super lightweight carousel component. Written under the react framework.
 
-Minerva.js helps you wrap your images into a carousel gallery slider, and gives you the option to add navigation buttons through simple HTML markups.
+Data:
+We populate each slider and build a slider via a configuration that we will pass through the properties once invoked.
 
-Minerva.js includes elegant skin colors to choose from, the easiest and faster slider for your to-go projects.
+Types of Content:
+There are two types of content at this moment. The first method is text-based; You can pass data via text. The second method is using an Image Url/Link.
 
-Note: jQuery Required.
+![logo](minervajs-slider-1.png "Minerva.JS")
+
+The text content will display in the center of the slider. The Image will take the "full" width of the overall slider container.
+
+![logo](minervajs-slider-2.png "Minerva.JS")
 
 ### Installation
-1. Download source code and copy folder `src` to your project root folder.
-2. Make the CSS & Javascript calls to load  script dependencies.
 
-```
-<link href="src/minerva.min.css" rel="stylesheet" />
-<script src="src/minerva.min.js"></script>
-```
+You can install the library through `npm ` or download the zip file and install it on your root folder.
 
 ### Usage
-1. Let's create a wrapper's and container to keep our coding in place. (stylesheets included with source code.)
-2. Let's run slider wrapper around our images that we want to slide through.
-3. Let's Populate/Add as many images as we please by using simple HTML markups.
-4. Let's create the dots ( . . . . . . ) wrapper effect under line, and then by adding `li`.
-5. Depending on the images you add, You will have to add as many dots as needed.
-6. Add Controllers markup.
-7. Happy Coding
 
-## Full Width
-```
-<div class="wrapper-minerva">
-<div class="container-minerva">
-  <ul id="slider-minerva">
-    <li><img src="img/amazon.jpg" height="100%" alt="" /></li>
-    <li><img src="img/galapagos.jpg" height="100%" alt="" /></li>
-    <li><img src="img/guayaquil.jpg" height="100%" alt="" /></li>
-    <li><img src="img/montanita.jpg" height="100%" alt="" /></li>
-    <li><img src="img/portoviejo.jpg" height="100%" alt="" /></li>
-  </ul>
+Verify that the library is installed, and ready to use. The next step is to import it to your React Project;
 
-  <ul id="dots-minerva">
-    <li class="active"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+`import { Carousel } from "@misterzik/minerva.js/carousel";`
 
-  <div class="" id="controllers-minerva">
-  <button id="prev-minerva">Prev</button>
-  <button id="next-minerva">Next</button>
-  </div>
-</div>
-</div>
+### Initialize The Component
+
+Initialize the component wrapper by using;
 
 ```
----
-## Half Width
-```
-<div class="wrapper-minerva">
-<div class="sm-container-minerva">
-  <ul id="slider-minerva">
-    <li><img src="img/amazon.jpg" height="100%" alt="" /></li>
-    <li><img src="img/galapagos.jpg" height="100%" alt="" /></li>
-    <li><img src="img/guayaquil.jpg" height="100%" alt="" /></li>
-    <li><img src="img/montanita.jpg" height="100%" alt="" /></li>
-    <li><img src="img/portoviejo.jpg" height="100%" alt="" /></li>
-  </ul>
-
-  <ul id="dots-minerva">
-    <li class="active"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-  <div class="" id="controllers-minerva">
-  <button id="prev-minerva">Prev</button>
-  <button id="next-minerva">Next</button>
-  </div>
-</div>
-</div>
-
+<Carousel
+  data={[]}
+  controls={{}}
+  widthSize={"500px"}
+  heightSize={"300px"}
+  duration={"30"}
+/>
 ```
 
-Read more documentations @ http://misterzik.github.io/minerva.js/
+### Application Properties Interface
 
-### Authors and Contributors
-In 2007, Nick Rodriguez (@misterzik), Insanen Solutions (@insanen), and ResolveDesign founded Minerva.JS as a playground script.
-In Memory of Minerva V, Rest in peace my beautiful angel, I will never stop expressing your passion for art.
+`data`: It's used to propagate and build the slider.
+
+```
+[
+  {
+    alt: "Minerva JS Plugin", // Alt Context
+    textContent: true, // Enable Text Content Profile
+    text: "Simple and Elegant Carousel", // Show Text Content Profile
+    style: "mn-it", // Custom Style
+  }
+]
+```
+
+`controls`: It's used to display arrows within your sliders and enable Auto Slide.
+
+```
+{ 
+  enabled: true, 
+  styled: "arrows", 
+  customStyle: "" 
+}
+```
+
+`widthSize`: It's used to give the container the width size. Pass pixel or %.
+
+`heightSize`: It's used to give the container the height size. Pass pixel or %.
+
+`duration`: It's used to give the duration of each slider when using Auto Slide. Pass in seconds a `number` only;
+
+```
+10 seconds = 10
+20 seconds = 20
+30 seconds = 30
+```
+
+EX: `duration={20}`
+
+More info - http://misterzik.github.io/minerva.js/
