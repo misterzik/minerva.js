@@ -1,4 +1,4 @@
-![logo](minervajs-slider.png "Minerva.JS")
+![logo](https://raw.githubusercontent.com/misterzik/minerva.js/main/minervajs-slider.png "Minerva.JS")
 
 # Minerva.js
 
@@ -10,7 +10,7 @@ We populate each slider and build a slider via a configuration that we will pass
 Types of Content:
 There are two types of content at this moment. The first method is text-based; You can pass data via text. The second method is using an Image Url/Link.
 
-![logo](minervajs-slider-1.png "Minerva.JS")
+![logo](https://raw.githubusercontent.com/misterzik/minerva.js/main/minervajs-slider-1.png "Minerva.JS")
 
 The text content will display in the center of the slider. The Image will take the "full" width of the overall slider container.
 
