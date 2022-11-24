@@ -1,6 +1,6 @@
 {
   "name": "@misterzik/minerva.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Minerva.JS is a Simple and Elegant Carousel Slider, and Minerva JS is a super lightweight carousel component. Written under the react framework.",
   "private": false,
   "publishConfig": {
