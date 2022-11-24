@@ -14,7 +14,6 @@ There are two types of content at this moment. The first method is text-based; Y
 
 The text content will display in the center of the slider. The Image will take the "full" width of the overall slider container.
 
-![logo](minervajs-slider-2.png "Minerva.JS")
 
 ### Installation
 
