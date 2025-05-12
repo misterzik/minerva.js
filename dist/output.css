@@ -36,6 +36,11 @@
 .mine-container .mine-item_img .mine-item_text-inner_img {
   position: absolute;
 }
+@media (max-width: 768px) {
+  .mine-container .mine-item {
+    width: 100%;
+  }
+}
 
 .mine-bts {
   display: inline-block;

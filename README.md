@@ -1,81 +1,170 @@
-![logo](https://raw.githubusercontent.com/misterzik/minerva.js/main/minervajs-slider.png "Minerva.JS")
+![logo](minervajs-slider.png "Minerva.JS")
 
 # Minerva.js
 
-Minerva.JS is a Simple and Elegant Carousel Slider, and Minerva JS is a super lightweight carousel component. Written under the react framework.
+Minerva.JS is a Simple and Elegant Carousel Slider. It is a super lightweight carousel component written in React, designed to be easy to use and highly customizable.
 
-Data:
-We populate each slider and build a slider via a configuration that we will pass through the properties once invoked.
+## Features
 
-Types of Content:
-There are two types of content at this moment. The first method is text-based; You can pass data via text. The second method is using an Image Url/Link.
+- Lightweight and fast
+- Supports both text and image-based content
+- Customizable styles and controls
+- Auto-slide functionality with configurable duration
+- Fully responsive and accessible
 
-![logo](https://raw.githubusercontent.com/misterzik/minerva.js/main/minervajs-slider-1.png "Minerva.JS")
+---
 
-The text content will display in the center of the slider. The Image will take the "full" width of the overall slider container.
+## Installation
 
+You can install the library through `npm`:
 
-### Installation
-
-You can install the library through `npm ` or download the zip file and install it on your root folder.
-
-### Usage
-
-Verify that the library is installed, and ready to use. The next step is to import it to your React Project;
-
-`import { Carousel } from "@misterzik/minerva.js/carousel";`
-
-### Initialize The Component
-
-Initialize the component wrapper by using;
-
+```bash
+npm install @misterzik/minerva.js
 ```
+
+Alternatively, you can download the zip file and install it in your project.
+
+---
+
+## Usage
+
+### Import the Component
+
+To use the carousel, import it into your React project:
+
+```tsx
+import { Carousel } from "@misterzik/minerva.js/carousel";
+```
+
+### Initialize the Component
+
+Initialize the carousel component by passing the required props:
+
+```tsx
 <Carousel
-  data={[]}
-  controls={{}}
+  data={[
+    {
+      imgUrl: "https://example.com/image1.jpg",
+      alt: "Image 1",
+      textContent: true,
+      text: "Welcome to Minerva.JS",
+      style: "custom-style",
+    },
+    {
+      imgUrl: "https://example.com/image2.jpg",
+      alt: "Image 2",
+      imgContent: true,
+    },
+  ]}
+  controls={{
+    enabled: true,
+    styled: "arrows",
+    customStyle: "custom-controls",
+  }}
   widthSize={"500px"}
   heightSize={"300px"}
-  duration={"30"}
+  duration={30}
 />
 ```
 
-### Application Properties Interface
+---
 
-`data`: It's used to propagate and build the slider.
+## Application Properties Interface
 
-```
+### `data`
+
+The `data` prop is used to populate and build the slider. Each item in the array represents a slide.
+
+Example:
+
+```tsx
 [
   {
-    alt: "Minerva JS Plugin", // Alt Context
-    textContent: true, // Enable Text Content Profile
-    text: "Simple and Elegant Carousel", // Show Text Content Profile
-    style: "mn-it", // Custom Style
-  }
-]
+    imgUrl: "https://example.com/image.jpg", // Image URL
+    alt: "Minerva JS Plugin", // Alt text for accessibility
+    textContent: true, // Enable text content
+    text: "Simple and Elegant Carousel", // Text to display
+    style: "mn-it", // Custom style for the slide
+  },
+];
 ```
 
-`controls`: It's used to display arrows within your sliders and enable Auto Slide.
+---
 
-```
-{ 
-  enabled: true, 
-  styled: "arrows", 
-  customStyle: "" 
+### `controls`
+
+The `controls` prop is used to enable navigation controls (arrows or dots) and auto-slide functionality.
+
+Example:
+
+```tsx
+{
+  enabled: true, // Enable controls
+  styled: "arrows", // Style type: "arrows" or "dots"
+  customStyle: "custom-controls" // Custom CSS class for controls
 }
 ```
 
-`widthSize`: It's used to give the container the width size. Pass pixel or %.
+---
 
-`heightSize`: It's used to give the container the height size. Pass pixel or %.
+### `widthSize`
 
-`duration`: It's used to give the duration of each slider when using Auto Slide. Pass in seconds a `number` only;
+The `widthSize` prop sets the width of the carousel container. You can pass a value in pixels or percentages.
 
+Example:
+
+```tsx
+widthSize={"500px"}
 ```
-10 seconds = 10
-20 seconds = 20
-30 seconds = 30
+
+---
+
+### `heightSize`
+
+The `heightSize` prop sets the height of the carousel container. You can pass a value in pixels or percentages.
+
+Example:
+
+```tsx
+heightSize={"300px"}
 ```
 
-EX: `duration={20}`
+---
 
-More info - http://misterzik.github.io/minerva.js/
+### `duration`
+
+The `duration` prop sets the duration of each slide when using auto-slide functionality. Pass a number in seconds.
+
+Example:
+
+```tsx
+duration={30} // 30 seconds per slide
+```
+
+---
+
+## Accessibility
+
+Minerva.JS is designed with accessibility in mind. It includes ARIA attributes and supports keyboard navigation for a better user experience.
+
+---
+
+## Development
+
+### Scripts
+
+- **Build**: `npm run build` - Builds the library for production.
+- **Watch**: `npm run watch` - Watches for changes and rebuilds automatically.
+- **Build Library**: `npm run build:lib` - Builds the library for distribution.
+
+---
+
+## More Information
+
+For more details, visit the [Minerva.JS Documentation](http://misterzik.github.io/minerva.js/).
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
